@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage("pullscm") {
             steps {
-                git credentialsId: 'git', url: '{your repo url}'
+                git credentialsId: 'github', url: '{your repo url}'
             }
         }
         stage("build") {
